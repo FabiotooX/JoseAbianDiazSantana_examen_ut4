@@ -10,7 +10,10 @@ Route::get('/mensaje', [MensajeController::class, 'create'])->name('mensaje.crea
 Route::post('/mensaje', [MensajeController::class, 'store'])->name('mensaje.store');
 
 // Mostrar muro de mensajes
-Route::get('/muro', [MensajeController::class, 'index'])->name('mensaje.index');
+Route::get('/muro', [MensajeController::class, 'index'])
+    ->middleware('auth')->name('mensaje.index');
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
