@@ -30,6 +30,11 @@ Route::middleware(['auth'
 
    Route::post('/admin/users/store', [App\Http\Controllers\Admin\UserController::class, 'store']
    )->name('admin.users.store');
+
+   // Ejercicio: Rutas para la nueva tabla y modelo
+    Route::get('/admin/alumno', [App\Http\Controllers\Admin\AlumnoController::class, 'index'])->name('admin.alumno.index');
+    Route::get('/admin/alumno/create', [App\Http\Controllers\Admin\AlumnoController::class, 'create'])->name('admin.alumno.create');
+    Route::post('/admin/alumno', [App\Http\Controllers\Admin\AlumnoController::class, 'store'])->name('admin.alumno.store');
 });
 
 // Rutas generadas por Jetstream para autenticación y dashboard

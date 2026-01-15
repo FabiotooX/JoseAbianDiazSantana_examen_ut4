@@ -113,7 +113,7 @@ return [
         'enabled' => true,
         'mode' => 'fullscreen',
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+            'path' => 'D:\Users\Abián\Pictures\Screenshots\LOGO.png',
             'alt' => 'AdminLTE Preloader Image',
             'effect' => 'animation__shake',
             'width' => 60,
@@ -316,16 +316,20 @@ return [
             'text' => 'search',
         ],
         [
-           'text' => 'Dashboard',
+           'text' => 'Examen UT4',
            'url' => 'admin/dashboard',
-           'icon' => 'fas fa-fw fa-home',
+           'icon' => 'fas fa-tachometer-alt',
        ],
        [
            'text' => 'Crear Usuario',
            'url' => 'admin/users/create',
            'icon' => 'fas fa-fw fa-user-plus',
        ],
-
+       [
+            'text' => 'Alumno',
+            'url' => 'admin/alumnos',
+            'icon' => 'fas fa-chart-bar',
+        ],
         [
             'text' => 'blog',
             'url' => 'admin/blog',
